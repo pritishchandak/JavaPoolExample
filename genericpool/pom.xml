@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>genericpool</groupId>
+  <artifactId>genericpool</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>genericpool</name>
+  <description>Design and implement a generic pool for storing objects (implementing poolable). The pool should
+support following:
+
+1. Creational pattern which would be used by the pool to create objects automatically when needed
+
+2. Maximum and Minimum number of objects which can be created and made available within the pool.
+ Minimum number would be used to make sure that the number of objects are available in the pool, Maximum number would make sure that the pool will create a max of these objects
+
+3. Automatic clearing of objects not used in the pool, this clearing agent can run at a fixed time interval
+
+4. Once the object borrowed from the pool is used should support returning back</description>
+  <dependencies>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>1.9.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
